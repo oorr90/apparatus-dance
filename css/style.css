@@ -272,7 +272,7 @@ PAGES: HEADER
 
 .page-name {
     background-color: #339999;
-    height: 300px;
+    height: 240px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -469,13 +469,40 @@ MEDIA QUERIES: 810px
     footer {
         font-size: .8em;
     }
+    
+    
+    /****** OTHER PAGES *********/
+    
+    .page-col {
+        width: 100%;
+        margin-bottom: 75px;
+    }
+    
+    .page-details .br {
+        margin: 5px 0;
+    }
+    
+    .pre-footer {
+        font-size: .8em;
+    }
+    
+    .pre-footer img {
+        width: 250px;
+    }
+    
+    /****** PAGE: GALLERY *********/
+    
+    .gallery-image {
+        width: 30%;
+        margin: 0 1.666666666% 25px;
+    }
 
 }
 
 
 /*************************************
 
-MEDIA QUERIES: 320px
+MEDIA QUERIES: 410px
 
 **************************************/
 
@@ -528,6 +555,28 @@ MEDIA QUERIES: 320px
         justify-content: center;
         font-size: .7em;
         flex-wrap: wrap;
+    }
+    
+    /****** OTHER PAGES *********/
+    
+    .page-name {
+        height: 200px;
+        font-size: .85em;
+    }
+    
+    .page-details {
+        font-size: .9em;
+    }
+    
+    .class-details {
+        font-size: .9em;
+    }
+    
+    /****** PAGE: GALLERY *********/
+    
+    .gallery-image {
+        width: 46%;
+        margin: 0 2% 25px;
     }
     
 }
