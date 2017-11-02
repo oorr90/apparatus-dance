@@ -1,0 +1,538 @@
+
+body {
+    font-size: 100%;
+    box-sizing: border-box;
+    font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
+    color: #222;
+}
+
+/*************************************
+
+OVERALL STYLINGS
+
+**************************************/
+
+
+a, a:visited, a:active {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.styled-button {
+    text-transform: uppercase;
+    font-size: 1.25em;
+    display: inline-block;
+}
+
+.styled-button a {
+    padding: .75em 1em;
+    border: 3px solid #fff;
+    color: #fff;
+    border-radius: 2px;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+
+.styled-button a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+
+
+/*************************************
+
+NAVIGATION
+
+**************************************/
+
+.hamburger-menu {
+    display: none;
+}
+
+.home-nav {
+    position: fixed;
+}
+
+#nav-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #cc3333;
+}
+
+#nav-wrap ul {
+    display: flex;
+    align-items: center;
+    padding: .5em;
+}
+
+#nav-wrap li {
+    margin: .5em;
+}
+
+#nav-wrap a {
+    color: #fff;
+}
+
+#nav-primary li {
+    padding: 0 .65em;
+    text-transform: uppercase;
+    font-size: .8em;
+}
+
+#nav-primary a {
+    padding: .25em 0;
+}
+
+#nav-primary .home {
+    padding: .5em;
+    border: 2px solid #fff;
+}
+
+#nav-primary .selected, #nav-primary a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+#nav-secondary img {
+    width: 1.4em;
+}
+
+
+
+/*************************************
+
+HEADER
+
+**************************************/
+
+.header-main {
+    background-image: url("../Assets/aerial-dance-sample6.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 550px;
+    padding-bottom: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.show-image {
+    width: 391px;
+    height: 232px;
+    margin: 0 auto;
+    background-image: url("../Assets/logo3.png");
+    background-size: cover;
+}
+
+.hide-text {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+
+
+
+/*************************************
+
+MAIN: HOME PAGE
+
+**************************************/
+
+
+main h2, main h3 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+main p {
+    line-height: 2;
+}
+
+
+.down-arrow {
+    width: 50px;
+    margin: 0px auto 100px;
+}
+
+
+.welcome {
+    font-size: 1.1em;
+    text-align: center;
+    padding: 50px 25% 200px;
+    background-color: #f4f4f4;
+}
+
+.welcome h2, .welcome p {
+    margin: 0;
+}
+
+.br {
+    display: inline-block;
+    width: 60px;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px 0;
+}
+
+
+
+
+
+.about-us {
+    background-color: #339999;
+    color: #fff;
+    padding: 100px 0;
+}
+
+.about-wrapper {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.about-cols {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-us-col {
+    width: 47%;
+}
+
+
+
+.join-us {
+    height: 600px;
+    background-image: url("../Assets/aerial-dance-sample3.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.join-us img {
+    display: block;
+    width: 250px;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+
+.join-us img:hover {
+
+    transform: scale(1.1);
+}
+
+
+
+.highlights {
+    padding: 160px 8%;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: space-between;
+}
+
+.highlights-col {
+    width: 30%;
+}
+
+
+
+/*************************************
+
+PAGES: HEADER
+
+**************************************/
+
+.header-logo-pages {
+    width: 30%;
+    margin: 0 auto;
+    min-width: 250px;
+    padding: 50px 0;
+}
+
+.page-name {
+    background-color: #339999;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-name h2 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 3em;
+}
+
+
+
+/*************************************
+
+PAGES: MAIN
+
+**************************************/
+
+.page-details {
+    width: 85%;
+    margin: 100px auto 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.page-col {
+    width: 45%;
+    margin-bottom: 75px;
+}
+
+.page-col h3 {
+    width: 100%;
+}
+
+
+.class-details {
+    background-color: #f4f4f4;
+    padding: 5px 10px;
+    font-size: .8em;
+    box-shadow: 1px 1px 1px #ccc;
+}
+
+.page-col a {
+    color: #222;
+    font-weight: bold;
+    border-bottom: 1px solid #222;
+}
+
+.page-col a:hover {
+    color: #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+
+
+/*************************************
+
+PAGE: GALLERY
+
+**************************************/
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.gallery-image {
+    margin: 0 1.5% 25px;
+    width: 22%;
+}
+
+
+
+
+/*************************************
+
+PAGES: PRE FOOTER
+
+**************************************/
+
+.pre-footer {
+    text-align: center;
+    padding: 50px 20%;
+    background-color: #f4f4f4;
+}
+
+.pre-footer img {
+    width: 350px;
+}
+
+.pre-footer a {
+    color: #339999;
+    font-weight: bold;
+    border-bottom: 1px solid #339999;
+}
+
+.pre-footer a:hover {
+    color: #87c1c1;
+    border-bottom: 1px solid #87c1c1;
+}
+
+
+
+/*************************************
+
+FOOTER
+
+**************************************/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 2em 1em;
+    background-color: #b6b6b6;
+    color: #222;
+    font-size: .9em;
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+footer p {
+    margin: 0 0 4px 0;
+}
+
+address {
+    font-style: normal;
+}
+
+
+
+
+/*************************************
+
+MEDIA QUERIES: 810px
+
+**************************************/
+
+@media screen and (max-width: 810px) {
+    
+
+    /****** HOME PAGE *********/
+
+    .header-main {
+        height: 400px;
+    }
+    
+    .hamburger-menu {
+        display: block;
+        width: 20px;
+        padding-left: 20px;
+    }
+
+    #nav-primary {
+        display: none;
+    }
+
+    .welcome {
+        padding: 50px 15% 200px;
+    }
+
+    .about-wrapper {
+        width: 80%;
+    }
+
+    .about-cols {
+        flex-wrap: wrap;
+    }
+
+    .about-us-col {
+        width: 100%;
+    }
+    
+    .join-us {
+        height: 450px;
+    }
+
+    .highlights {
+        padding: 80px 10%;
+        flex-wrap: wrap;
+    }
+
+    .highlights-col {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .highlights-col .br {
+        margin: 10px 0;
+    }
+    
+    footer {
+        font-size: .8em;
+    }
+
+}
+
+
+/*************************************
+
+MEDIA QUERIES: 320px
+
+**************************************/
+
+/****** HOME PAGE *********/
+
+@media screen and (max-width: 410px) {
+    
+    .show-image {
+        width: 195.5px;
+        height: 116px;
+    }
+    
+    .header-main {
+        height: 300px;
+        background-position: left;
+    }
+    
+    .down-arrow {
+        display: none;
+    }
+    
+    .welcome {
+        font-size: .9em;
+        padding: 50px 15% 75px;
+    }
+    
+    .about-us {
+        font-size: .8em;
+        padding: 50px 0;
+    }
+    
+    .join-us {
+        height: 350px;
+    }
+    
+    .join-us img {
+        width: 150px;
+    }
+    
+    .highlights {
+        font-size: .8em;
+    }
+    
+    .highlights h3, .highlights p {
+        margin: 0;
+    }
+    
+    footer {
+        text-align: center;
+        justify-content: center;
+        font-size: .7em;
+        flex-wrap: wrap;
+    }
+    
+}
+
+
+
+
+
