@@ -331,7 +331,17 @@ PAGES: MAIN
     text-transform: uppercase;
 }
 
+.contact-name {
+    color: #339999;
+}
 
+.contact-details .page-col {
+    text-align: center;
+}
+
+.contact-details .page-col img {
+    width: 200px;
+}
 
 
 /*************************************
