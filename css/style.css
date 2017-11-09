@@ -1,6 +1,7 @@
 
 body {
     font-size: 100%;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
     color: #222;
@@ -27,6 +28,24 @@ img {
     max-width: 100%;
 }
 
+p {
+    line-height: 2;
+}
+
+.about-us, .page-name {
+    background-color: #339999;
+    color: #fff;
+}
+
+.br { /* custom line break */
+    display: inline-block;
+    width: 60px;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px 0;
+}
+
+/*
 .styled-button {
     text-transform: uppercase;
     font-size: 1.25em;
@@ -48,6 +67,38 @@ img {
     background-color: #000;
     color: #fff;
 }
+*/
+
+/*************************************
+
+FONT STYLINGS
+
+**************************************/
+
+
+h2, h3 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.gallery h2, .pre-footer h2 {
+    display: none;
+}
+
+h3 {
+    text-transform: uppercase;
+    letter-spacing: 2px; 
+}
+
+h4 {
+    
+}
+
+footer, .pre-footer {
+    font-size: .9em;
+}
+
+
 
 
 
@@ -61,11 +112,11 @@ NAVIGATION
     display: none;
 }
 
-.home-nav {
-    position: fixed;
+.nav-wrap-home {
+    position: fixed; /* sticky top nav on home page */
 }
 
-#nav-wrap {
+.nav-wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -73,41 +124,38 @@ NAVIGATION
     background-color: #cc3333;
 }
 
-#nav-wrap ul {
+.nav-wrap ul {
     display: flex;
     align-items: center;
     padding: .5em;
 }
 
-#nav-wrap li {
-    margin: .5em;
-}
-
-#nav-wrap a {
-    color: #fff;
-}
-
-#nav-primary li {
+.nav-wrap li {
+    margin: .8em;
     padding: 0 .65em;
     text-transform: uppercase;
     font-size: .8em;
 }
 
-#nav-primary a {
+.nav-wrap a {
+    color: #fff;
+}
+
+.nav-primary a {
     padding: .25em 0;
 }
 
-#nav-primary .home {
+.nav-primary .home {
     padding: .5em;
     border: 2px solid #fff;
 }
 
-#nav-primary .selected, #nav-primary a:hover {
+.nav-primary .selected, .nav-primary a:hover {
     border-bottom: 2px solid #fff;
 }
 
-#nav-secondary img {
-    width: 1.4em;
+.nav-secondary img {
+    width: 2em;
 }
 
 
@@ -124,7 +172,6 @@ HEADER
     background-position: top;
     background-attachment: fixed;
     height: 570px;
-    padding-bottom: 20px;
     text-align: center;
     display: flex;
     align-items: center;
@@ -135,7 +182,7 @@ HEADER
 .show-image {
     width: 391px;
     height: 232px;
-    margin: 0 auto;
+    margin: 0 auto 40px;
     background-image: url("../Assets/logo3.png");
     background-size: cover;
 }
@@ -148,29 +195,11 @@ HEADER
 
 
 
-
-
 /*************************************
 
 MAIN: HOME PAGE
 
 **************************************/
-
-
-main h2, main h3 {
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-main p {
-    line-height: 2;
-}
-
-
-.down-arrow {
-    width: 50px;
-    margin: 0px auto 100px;
-}
 
 
 .welcome {
@@ -184,21 +213,7 @@ main p {
     margin: 0;
 }
 
-.br {
-    display: inline-block;
-    width: 60px;
-    height: 1px;
-    background-color: #ccc;
-    margin: 20px 0;
-}
-
-
-
-
-
 .about-us {
-    background-color: #339999;
-    color: #fff;
     padding: 100px 0;
 }
 
@@ -215,8 +230,6 @@ main p {
 .about-us-col {
     width: 47%;
 }
-
-
 
 .join-us {
     height: 600px;
@@ -238,11 +251,8 @@ main p {
 }
 
 .join-us img:hover {
-
     transform: scale(1.1);
 }
-
-
 
 .highlights {
     padding: 160px 8%;
@@ -271,17 +281,14 @@ PAGES: HEADER
 }
 
 .page-name {
-    background-color: #339999;
-    height: 240px;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .page-name h2 {
-    text-transform: uppercase;
-    color: #fff;
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 
@@ -309,16 +316,15 @@ PAGES: MAIN
     width: 100%;
 }
 
-
 .class-details {
     margin-top: 3.5em;
-    font-size: .8em;
+    color: #666;
 }
 
 .page-col a {
-    color: #222;
+    color: #666;
     font-weight: bold;
-    border-bottom: 1px solid #222;
+    border-bottom: 1px solid #666;
 }
 
 .page-col a:hover {
@@ -361,11 +367,6 @@ PAGE: GALLERY
     width: 22%;
 }
 
-.gallery h2 {
-    display: none;
-}
-
-
 
 
 
@@ -382,7 +383,7 @@ PAGES: PRE FOOTER
 }
 
 .pre-footer img {
-    width: 350px;
+    width: 300px;
 }
 
 .pre-footer a {
@@ -394,10 +395,6 @@ PAGES: PRE FOOTER
 .pre-footer a:hover {
     color: #87c1c1;
     border-bottom: 1px solid #87c1c1;
-}
-
-.pre-footer h2 {
-    display: none;
 }
 
 
@@ -415,12 +412,11 @@ footer {
     padding: 3em 1.5em 2em;
     background-color: #dbdbdb;
     color: #4c4c4c;
-    font-size: .9em;
     font-family: "Source Sans Pro", sans-serif;
 }
 
 footer p {
-    margin: 0 0 .7em 0;
+    margin: 0;
 }
 
 address {
