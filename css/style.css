@@ -361,6 +361,10 @@ PAGE: GALLERY
     width: 22%;
 }
 
+.gallery h2 {
+    display: none;
+}
+
 
 
 
@@ -390,6 +394,10 @@ PAGES: PRE FOOTER
 .pre-footer a:hover {
     color: #87c1c1;
     border-bottom: 1px solid #87c1c1;
+}
+
+.pre-footer h2 {
+    display: none;
 }
 
 
