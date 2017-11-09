@@ -119,11 +119,11 @@ HEADER
 **************************************/
 
 .header-main {
-    background-image: url("../Assets/aerial-dance-sample6.jpg");
+    background-image: url("../Assets/aerial-dance-sample3.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: top;
     background-attachment: fixed;
-    height: 550px;
+    height: 570px;
     padding-bottom: 20px;
     text-align: center;
     display: flex;
@@ -176,7 +176,7 @@ main p {
 .welcome {
     font-size: 1.1em;
     text-align: center;
-    padding: 50px 25% 200px;
+    padding: 120px 25% 200px;
     background-color: #f4f4f4;
 }
 
@@ -220,7 +220,7 @@ main p {
 
 .join-us {
     height: 600px;
-    background-image: url("../Assets/aerial-dance-sample3.jpg");
+    background-image: url("../Assets/aerial-dance-sample6.jpg");
     background-size: cover;
     background-attachment: fixed;
     display: flex;
@@ -230,7 +230,7 @@ main p {
 
 .join-us img {
     display: block;
-    width: 250px;
+    width: 200px;
     -webkit-transition: all .25s ease-in-out;
     -moz-transition: all .25s ease-in-out;
     -o-transition: all .25s ease-in-out;
@@ -311,10 +311,8 @@ PAGES: MAIN
 
 
 .class-details {
-    background-color: #f4f4f4;
-    padding: 5px 10px;
+    margin-top: 3.5em;
     font-size: .8em;
-    box-shadow: 1px 1px 1px #ccc;
 }
 
 .page-col a {
@@ -327,6 +325,12 @@ PAGES: MAIN
     color: #ccc;
     border-bottom: 1px solid #ccc;
 }
+
+.facebook {
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+
 
 
 
@@ -346,6 +350,7 @@ PAGE: GALLERY
     margin: 0 1.5% 25px;
     width: 22%;
 }
+
 
 
 
@@ -389,15 +394,15 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 2em 1em;
-    background-color: #b6b6b6;
-    color: #222;
+    padding: 3em 1.5em 2em;
+    background-color: #dbdbdb;
+    color: #4c4c4c;
     font-size: .9em;
-    font-family: "Helvetica Neue", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
 }
 
 footer p {
-    margin: 0 0 4px 0;
+    margin: 0 0 .7em 0;
 }
 
 address {
