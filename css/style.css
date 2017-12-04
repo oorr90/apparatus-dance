@@ -28,10 +28,6 @@ img {
     max-width: 100%;
 }
 
-p {
-    line-height: 2;
-}
-
 .about-us, .page-name {
     background-color: #339999;
     color: #fff;
@@ -45,29 +41,10 @@ p {
     margin: 20px 0;
 }
 
-/*
-.styled-button {
-    text-transform: uppercase;
-    font-size: 1.25em;
-    display: inline-block;
+.welcome, .highlights, .pre-footer {
+    background-color: #f4f4f4;
 }
 
-.styled-button a {
-    padding: .75em 1em;
-    border: 3px solid #fff;
-    color: #fff;
-    border-radius: 2px;
-    -webkit-transition: all .25s ease-in-out;
-    -moz-transition: all .25s ease-in-out;
-    -o-transition: all .25s ease-in-out;
-    transition: all .25s ease-in-out;
-}
-
-.styled-button a:hover {
-    background-color: #000;
-    color: #fff;
-}
-*/
 
 /*************************************
 
@@ -75,8 +52,11 @@ FONT STYLINGS
 
 **************************************/
 
+p {
+    line-height: 2;
+}
 
-h2, h3 {
+h2, h3, h4 {
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -91,7 +71,7 @@ h3 {
 }
 
 h4 {
-    
+    margin-top: 40px;
 }
 
 footer, .pre-footer {
@@ -201,12 +181,9 @@ MAIN: HOME PAGE
 
 **************************************/
 
-
 .welcome {
-    font-size: 1.1em;
     text-align: center;
     padding: 120px 25% 200px;
-    background-color: #f4f4f4;
 }
 
 .welcome h2, .welcome p {
@@ -256,7 +233,6 @@ MAIN: HOME PAGE
 
 .highlights {
     padding: 160px 8%;
-    background-color: #f4f4f4;
     display: flex;
     justify-content: space-between;
 }
@@ -349,6 +325,10 @@ PAGES: MAIN
     width: 200px;
 }
 
+.pricing {
+    height: 300px;
+}
+
 
 /*************************************
 
@@ -379,7 +359,6 @@ PAGES: PRE FOOTER
 .pre-footer {
     text-align: center;
     padding: 50px 20%;
-    background-color: #f4f4f4;
 }
 
 .pre-footer img {
